@@ -9,6 +9,10 @@ span {
 	text-transform: uppercase;
 }
 
+a {
+  color: withe;
+}
+
 .container {
 	width: 800px;
 	height: 420px;
