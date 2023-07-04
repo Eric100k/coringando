@@ -10,7 +10,8 @@ span {
 }
 
 a {
-  color: withe;
+	color: withe;
+	text-decoration: none;
 }
 
 .container {
