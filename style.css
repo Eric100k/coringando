@@ -1,8 +1,8 @@
 body {
 	font-family: 'Wendy One', sans-serif;
-	background-color: #263238;
 	background-position: right center;
 	background-size: 100%;
+	background-color: #263238;
 }
 
 span {
@@ -119,6 +119,20 @@ span {
 
 .balloon > div:nth-child(6):before {
 	color: rgba(242, 194, 58, 0.9);
+}
+
+.balloon > div:nth-child(6) {
+	background: rgba(182, 15, 97, 0.9);
+	left: 0;
+	box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+	-webkit-animation: balloon1 6s ease-in-out infinite;
+	-moz-animation: balloon1 6s ease-in-out infinite;
+	-o-animation: balloon1 6s ease-in-out infinite;
+	animation: balloon1 6s ease-in-out infinite;
+}
+
+.balloon > div:nth-child(6):before {
+	color: rgba(182, 15, 97, 0.9);
 }
 
 .balloon > div:before {
