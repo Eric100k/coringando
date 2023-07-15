@@ -1,43 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<title>Feliz aniversário</title>
-		<meta name="autor" content="West" />
-		<meta name="autor" content="West" />
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<div class="container">
-			<div class="balloon">
-				<div>
-					<span>R</span>
-				</div>
-				<div>
-					<span>A</span>
-				</div>
-				<div>
-					<span>F</span>
-				</div>
-				<div>
-					<span>A</span>
-				</div>
-				<div>
-					<span>E</span>
-				</div>
-				<div>
-					<span>L</span>
-				</div>
-				<div>
-					<span>L</span>
-				</div>
-				<div>
-					<span>E</span>
-				</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+	        background-color: #263238;
+        }
+        }
 
-			</div>
-			<h1><a href="https://eric100k.github.io/coringando/cszinho.html">Feliz aniversário, Praga</a></button></h1>
-		</div>
-	</body>
+        a {
+            text-decoration: none;
+        }
+
+        .box {
+            font-size: 20px;
+            color: white;
+            height: 250px;
+            width: 350px;
+            border-radius: 10px;
+            background: #191919;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            width: 150px;
+        }
+
+        button {
+            height: 30px;
+            width: 50px;
+            background: white;
+            color: black;
+            font-weight: 600;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+    </style>
+    <title>Pedido Irrecusável</title>
+</head>
+<body>
+    <div class="box">
+        <p>Cuzinho hoje?</p>
+        <div class="buttons-container">
+            <button><a href="https://www.google.com/search?q=noice&oq=noice&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIJCAYQABgKGIAEMgkIBxAAGAoYgAQyCQgIEAAYChiABDIJCAkQABgKGIAE0gEHOTQxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:c000df66,vid:a8c5wmeOL9o">Sim</a></button>
+            <button id="no">Não</button>
+        </div>
+    </div>
+</body>
+<script>
+    let button = document.getElementById('no');
+    let height = window.innerHeight - 50;
+    let width = window.innerWidth - 50;
+
+    button.addEventListener('mouseover', function () {
+        button.style.position = "absolute"
+        button.style.top = Math.random() * height + "px";
+        button.style.left = Math.random() * width + "px";
+    })
+</script>
 </html>
